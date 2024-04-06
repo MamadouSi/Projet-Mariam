@@ -1,10 +1,25 @@
 /* style.css */
 
+
 .gallery {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* Alignement au centre */
+    justify-content: center; /* Alignement horizontal au centre */
+    align-items: center; /* Alignement vertical au centre */
+    max-width: 1200px; /* Largeur maximale de la galerie */
+    margin: 0 auto; /* Pour centrer la galerie horizontalement */
+    flex-direction: row; /* Direction par défaut - lignes */
+
 }
+
+
+@media (max-width: 1200px) {
+    .gallery {
+        flex-direction: column; /* Changement de direction en colonne */
+        align-items: center; /* Alignement vertical au centre */
+    }
+}
+
 
 
 .item {
