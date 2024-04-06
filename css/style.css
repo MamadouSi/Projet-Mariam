@@ -1,0 +1,54 @@
+/* style.css */
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Alignement au centre */
+}
+
+
+.item {
+    width: calc(33.33% - 20px);
+    margin: 10px;
+}
+
+.item img {
+    width: 350px;
+    height: 350px;
+    border-radius: 20px; /* Correction */
+}
+
+
+.item h2 {
+    margin: 5px 0;
+    color: black;
+    font-weight: bold;
+}
+
+.item p {
+    margin: 5px 0;
+    color: black;
+}
+
+header, footer {
+    background-color: blue;
+    color: white;
+    padding: 10px;
+}
+
+header nav ul, footer nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+header nav ul li, footer nav ul li {
+    margin: 0;
+}
+
+header nav ul li a, footer nav ul li a {
+    color: white;
+    text-decoration: none;
+}
